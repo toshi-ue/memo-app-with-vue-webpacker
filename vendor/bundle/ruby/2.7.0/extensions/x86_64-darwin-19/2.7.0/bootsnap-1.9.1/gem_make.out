@@ -1,0 +1,15 @@
+current directory: /Users/yr/progs/ruby/rails/memo-app-with-vue-webpacker/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.9.1/ext/bootsnap
+/Users/yr/.rbenv/versions/2.7.3/bin/ruby -I /Users/yr/.rbenv/versions/2.7.3/lib/ruby/2.7.0 -r ./siteconf20211021-51057-1tu7t6o.rb extconf.rb
+creating Makefile
+
+current directory: /Users/yr/progs/ruby/rails/memo-app-with-vue-webpacker/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.9.1/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/yr/progs/ruby/rails/memo-app-with-vue-webpacker/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.9.1/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/yr/progs/ruby/rails/memo-app-with-vue-webpacker/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.9.1/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20211021-51057-1agv56z/bootsnap
