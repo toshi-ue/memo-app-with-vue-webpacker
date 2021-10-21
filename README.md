@@ -24,3 +24,4 @@ Things you may want to cover:
 * ...
 
 <!-- [Rails × Vue.js でメモアプリを作成しながらモダンな開発を学ぼう！ | Techpit](https://www.techpit.jp/courses/123) -->
+<!-- [PostgresSQL のerror　Postgres PG::ConnectionBad: could not connect to server: No such file or directory Is the server running locally and accepting connections on Unix domain socket "/tmp/.s.PGSQL.5432"? - Qiita](https://qiita.com/yoshixj/items/3d742eb08343ea93dcd4) -->
