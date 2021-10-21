@@ -16,6 +16,9 @@ rerun.txt
 pickle-email-*.html
 
 # Ignore pidfiles, but keep the directory.
+/log/
+!/log/.keep
+/tmp/
 /tmp/pids/*
 !/tmp/pids/
 !/tmp/pids/.keep
