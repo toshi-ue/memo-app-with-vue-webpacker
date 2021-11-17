@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   namespace :api, format: 'json' do
     resources :memos, only: [:index, :create]
   end
+
+  root to: 'home#index'
 end
