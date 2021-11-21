@@ -11,7 +11,7 @@
           class="form-control"
         />
       </div>
-      <button @click="addMemo">メモを追加</button>
+      <button @click="addMemo" :disabled="!buttonEnabled">メモを追加</button>
     </div>
     <div class="flex">
       <div v-for="memo in memos" :key="memo.id" class="card">
@@ -31,16 +31,22 @@ import axios from "axios";
 export default {
   data: function () {
     return {
+      disabledFlg: true,
       memos: "memos",
       title: "",
       description: "",
     };
   },
+  computed: {
+    buttonEnabled: function () {
+      return (this.disabledFlg = this.title && this.description ? true : false);
+    },
+  },
   mounted() {
-    this.setMemo();
+    this.setMemos();
   },
   methods: {
-    setMemo: function () {
+    setMemos: function () {
       axios.get("/api/memos").then((response) => (this.memos = response.data));
     },
     addMemo: function () {
