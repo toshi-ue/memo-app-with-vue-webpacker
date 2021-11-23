@@ -62,7 +62,7 @@ export default {
           title: this.title,
           description: this.description,
         })
-        .then((response) => this.setMemo());
+        .then((response) => this.setMemos());
     },
     deleteMemo: function (id) {
       axios
