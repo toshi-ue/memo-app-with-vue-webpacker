@@ -83,7 +83,11 @@ export default {
           title: this.title,
           description: this.description,
         })
-        .then((response) => this.setMemos());
+        .then((response) => {
+          this.title = "";
+          this.description = "";
+          this.setMemos();
+        });
     },
     deleteMemo: function (id) {
       axios
@@ -102,5 +106,8 @@ export default {
 <style lang="scss" scoped>
 #app {
   max-width: 960px;
+}
+.card {
+  margin: -3px;
 }
 </style>
