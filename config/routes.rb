@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'home', to: 'home#index'
 
   namespace :api, format: 'json' do
-    resources :memos, only: [:index, :create]
+    resources :memos, only: [:index, :create, :destroy]
   end
 
   root to: 'home#index'

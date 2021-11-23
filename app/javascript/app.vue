@@ -21,6 +21,7 @@
           </div>
           {{ memo.description }}
         </div>
+        <button v-on:click="deleteMemo(memo.id)">削除</button>
       </div>
     </div>
   </div>
@@ -56,6 +57,16 @@ export default {
           description: this.description,
         })
         .then((response) => this.setMemo());
+    },
+    deleteMemo: function (id) {
+      axios
+        .delete(`/api/memos/${id}`)
+        .then((response) => {
+          this.setMemos();
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
     },
   },
 };
